@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 300px;
+            height: 250px;
+            background-image: url("C:/Users/Brave/Downloads/Telegram Desktop/photo_2023-01-27_17-06-22.jpg");
+            background-size: cover;
+        }
+        .shadow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            width: 80%;
+            height: 80%;
+            background: #079ce0b6;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .parent:hover .shadow {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="shadow">
+            <h2>Imom</h2>
+        </div>
+    </div>
+</body>
+</html>
